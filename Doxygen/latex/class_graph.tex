@@ -1,0 +1,270 @@
+\hypertarget{class_graph}{\section{Graph$<$ Key, Hash, V, E $>$ Class Template Reference}
+\label{class_graph}\index{Graph$<$ Key, Hash, V, E $>$@{Graph$<$ Key, Hash, V, E $>$}}
+}
+
+
+The \hyperlink{class_graph}{Graph} class.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graph_a8af5978e194f7b3b86d0c43b8e6c87cc}{Graph} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_graph_aa89b04c5cde59bdc94357eb33ae6ae6a}{Graph} (size\+\_\+t vertex\+\_\+count)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_graph_a6eff1780982d97b034429a7e367c6553}{\hyperlink{class_graph_a6eff1780982d97b034429a7e367c6553}{$\sim$\+Graph} ()}\label{class_graph_a6eff1780982d97b034429a7e367c6553}
+
+\begin{DoxyCompactList}\small\item\em The (empty) destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_a702f2b76029522c7e18bd3fd41a4bf6e}{add\+Vertex} (const Key \&key, const V \&data)
+\begin{DoxyCompactList}\small\item\em Adds a vertex to the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_a051851f77b26c8a28bb5e07dd58c14da}{add\+Edge} (const Key \&key\+\_\+0, const Key \&key\+\_\+1, const E \&data)
+\begin{DoxyCompactList}\small\item\em Adds an edge to the graph. \end{DoxyCompactList}\item 
+\hyperlink{struct_vertex}{Vertex}$<$ V, E $>$ \& \hyperlink{class_graph_aac27624b986945639260a6e9562b7ff8}{get\+Vertex} (const Key \&key)
+\begin{DoxyCompactList}\small\item\em Retrieve the vertex at the given input. \end{DoxyCompactList}\item 
+\hyperlink{struct_edge}{Edge}$<$ V, E $>$ \& \hyperlink{class_graph_a86f2bb9185e6c7fd7db037e3bc1e0be5}{get\+Edge} (const Key \&key\+\_\+0, const Key \&key\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Retrieve the edge connecting the vertices at the given input. \end{DoxyCompactList}\item 
+Key \hyperlink{class_graph_af3629a385f2e88d86f769aa9b9984795}{get\+Key} (const \hyperlink{struct_vertex}{Vertex}$<$ V, E $>$ \&vertex)
+\begin{DoxyCompactList}\small\item\em Retrieve the key of the input vertex. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_graph_a99e8a0471b0aebb5a01905013d0b48b1}{get\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the size of the graph. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_ac05cba56c39d45e3d87d340da5c9f961}{remove\+Vertex} (const Key \&key)
+\begin{DoxyCompactList}\small\item\em Remove the vertex at the given input. \end{DoxyCompactList}\item 
+void \hyperlink{class_graph_a8e084b3d3126f70deede7e4386946c33}{remove\+Edge} (const Key \&key\+\_\+0, const Key \&key\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Remove the edge conntecting the vertices at the given input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_graph_a5355de1f523ad1574638b997e6ecdeee}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_graph}{Graph} \&graph)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Hash, typename V, typename E$>$class Graph$<$ Key, Hash, V, E $>$}
+
+The \hyperlink{class_graph}{Graph} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Key} & is the type used to represent the vertex relative to other vertices. \\
+\hline
+{\em Hash} & is the type of hash used for looking up vertices. \\
+\hline
+{\em V} & is the type of vertex data. \\
+\hline
+{\em E} & is the type of edge data.\\
+\hline
+\end{DoxyTemplParams}
+This class implements the adjacency list structure of a graph. That is, the graph contains a set of vertices which, in turn, contain a set of edges. As such, this class is better suited for representing a sparse graph. No copy-\/constructor, assignment operator, or move-\/constructor exist. Any copies will result in a shallow copy. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graph_a8af5978e194f7b3b86d0c43b8e6c87cc}{\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection[{Graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ {\bf Graph}$<$ Key, Hash, V, E $>$\+::{\bf Graph} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a8af5978e194f7b3b86d0c43b8e6c87cc}
+
+
+The default constructor. 
+
+Initializes the size of the graph to 0. \hypertarget{class_graph_aa89b04c5cde59bdc94357eb33ae6ae6a}{\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection[{Graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ {\bf Graph}$<$ Key, Hash, V, E $>$\+::{\bf Graph} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{vertex\+\_\+count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_aa89b04c5cde59bdc94357eb33ae6ae6a}
+
+
+A constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+\_\+count} & is the expected size of the graph.\\
+\hline
+\end{DoxyParams}
+Initializes the size of the graph to 0 and then reserves memory for the expected number of vertices. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graph_a051851f77b26c8a28bb5e07dd58c14da}{\index{Graph@{Graph}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Graph@{Graph}}
+\subsubsection[{add\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ void {\bf Graph}$<$ Key, Hash, V, E $>$\+::add\+Edge (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key\+\_\+0, }
+\item[{const Key \&}]{key\+\_\+1, }
+\item[{const E \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a051851f77b26c8a28bb5e07dd58c14da}
+
+
+Adds an edge to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+0} & is the key corresponding to the origin vertex. \\
+\hline
+{\em key\+\_\+1} & is the key corresponding to the destination vertex. \\
+\hline
+{\em data} & is the data held by the edge.\\
+\hline
+\end{DoxyParams}
+This function does not check for the existence of vertices at key\+\_\+0 and key\+\_\+1. However, it does assert that the keys are not equal. \hypertarget{class_graph_a702f2b76029522c7e18bd3fd41a4bf6e}{\index{Graph@{Graph}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!Graph@{Graph}}
+\subsubsection[{add\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ void {\bf Graph}$<$ Key, Hash, V, E $>$\+::add\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key, }
+\item[{const V \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a702f2b76029522c7e18bd3fd41a4bf6e}
+
+
+Adds a vertex to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key at which to store the vertex. \\
+\hline
+{\em data} & is the data held by the vertex.\\
+\hline
+\end{DoxyParams}
+This function does not check for pre-\/existing vertices. \hypertarget{class_graph_a86f2bb9185e6c7fd7db037e3bc1e0be5}{\index{Graph@{Graph}!get\+Edge@{get\+Edge}}
+\index{get\+Edge@{get\+Edge}!Graph@{Graph}}
+\subsubsection[{get\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ {\bf Edge}$<$V, E$>$\& {\bf Graph}$<$ Key, Hash, V, E $>$\+::get\+Edge (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key\+\_\+0, }
+\item[{const Key \&}]{key\+\_\+1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a86f2bb9185e6c7fd7db037e3bc1e0be5}
+
+
+Retrieve the edge connecting the vertices at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+0} & is the key corresponding to the origin vertex. \\
+\hline
+{\em key\+\_\+1} & is the key corresponding to the destination vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the edge connecting the vertices at the given input.
+\end{DoxyReturn}
+This function does not check for the existence of vertices at key\+\_\+0 and key\+\_\+1. However, it does assert that the keys are not equal and that the edge exists. \hypertarget{class_graph_af3629a385f2e88d86f769aa9b9984795}{\index{Graph@{Graph}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Graph@{Graph}}
+\subsubsection[{get\+Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ Key {\bf Graph}$<$ Key, Hash, V, E $>$\+::get\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vertex}$<$ V, E $>$ \&}]{vertex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_af3629a385f2e88d86f769aa9b9984795}
+
+
+Retrieve the key of the input vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & is the vertex of the desired key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the key of the input vertex.
+\end{DoxyReturn}
+This function asserts that the vertex exists in the graph. \hypertarget{class_graph_a99e8a0471b0aebb5a01905013d0b48b1}{\index{Graph@{Graph}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Graph@{Graph}}
+\subsubsection[{get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ size\+\_\+t {\bf Graph}$<$ Key, Hash, V, E $>$\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a99e8a0471b0aebb5a01905013d0b48b1}
+
+
+Retrieve the size of the graph. 
+
+\begin{DoxyReturn}{Returns}
+the number of vertices in the graph. 
+\end{DoxyReturn}
+\hypertarget{class_graph_aac27624b986945639260a6e9562b7ff8}{\index{Graph@{Graph}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!Graph@{Graph}}
+\subsubsection[{get\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ {\bf Vertex}$<$V, E$>$\& {\bf Graph}$<$ Key, Hash, V, E $>$\+::get\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_aac27624b986945639260a6e9562b7ff8}
+
+
+Retrieve the vertex at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key corresponding to desired vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex at the given input.
+\end{DoxyReturn}
+This function does not check for the existence of the vertex. \hypertarget{class_graph_a8e084b3d3126f70deede7e4386946c33}{\index{Graph@{Graph}!remove\+Edge@{remove\+Edge}}
+\index{remove\+Edge@{remove\+Edge}!Graph@{Graph}}
+\subsubsection[{remove\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ void {\bf Graph}$<$ Key, Hash, V, E $>$\+::remove\+Edge (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key\+\_\+0, }
+\item[{const Key \&}]{key\+\_\+1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_a8e084b3d3126f70deede7e4386946c33}
+
+
+Remove the edge conntecting the vertices at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+0} & is the key corresponding to the origin vertex. \\
+\hline
+{\em key\+\_\+1} & is the key corresponding to the destination vertex.\\
+\hline
+\end{DoxyParams}
+This function does not check for the existence of vertices at key\+\_\+0 and key\+\_\+1. However, it does assert that the keys are not equal and that the edge exists. \hypertarget{class_graph_ac05cba56c39d45e3d87d340da5c9f961}{\index{Graph@{Graph}!remove\+Vertex@{remove\+Vertex}}
+\index{remove\+Vertex@{remove\+Vertex}!Graph@{Graph}}
+\subsubsection[{remove\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ void {\bf Graph}$<$ Key, Hash, V, E $>$\+::remove\+Vertex (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_graph_ac05cba56c39d45e3d87d340da5c9f961}
+
+
+Remove the vertex at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key corresponding to the desired vertex.\\
+\hline
+\end{DoxyParams}
+This function does not check for the existence of the vertex. The edges of the vertex are also removed. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_graph_a5355de1f523ad1574638b997e6ecdeee}{\index{Graph@{Graph}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Graph@{Graph}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Hash , typename V , typename E $>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Graph}$<$ Key, Hash, V, E $>$ \&}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_graph_a5355de1f523ad1574638b997e6ecdeee}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & is the stream to which the graph is output. \\
+\hline
+{\em graph} & is the graph which is output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the stream after outputting the graph to it.
+\end{DoxyReturn}
+This function is useful for debugging; it outputs the addresses of the graph, its vertices, and the vertices' edges. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Brenden/\+Documents/\+Visual Studio 2013/\+Projects/\+Miscellaneous/\+Graph/\+Graph/Graph.\+h\end{DoxyCompactItemize}
