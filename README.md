@@ -10,6 +10,6 @@ Now for some notes you should read:
 - The file (Graph.h) makes use of shared pointers. I do this not because of any sort of personal ineptness regarding pointers, but because the general attitude online is that pointers are the root of all evil. Hopefully this adjustment will make the code easier for you to work with.
 - None of the methods check for existence unless it can be done whilst they perform their main duty. That is, if you try to remove a nonexistent edge or vertex, expect problems.
 - Following the above note, I have added asserts (from <cassert>) when possible. This should clarify where errors are occurring if you attempt to do the impossible.
-- You can reserve memory for the graph! See the Doxygen documentation and take a look at the contructors for the Graph class.
+- You can reserve memory for the graph! See the Doxygen documentation and take a look at the constructors for the Graph class.
 
 I hope that you find this class useful!
