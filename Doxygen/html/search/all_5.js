@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vertex',['Vertex',['../struct_vertex.html',1,'Vertex&lt; V, E &gt;'],['../struct_vertex.html#a569a8010956627ab0ac58e1fb1e1de4d',1,'Vertex::Vertex()']]]
+  ['remove_5fedge',['remove_edge',['../classdynamic__sparse__graph.html#a5e377f2d740acef43e1528041b94e52d',1,'dynamic_sparse_graph']]],
+  ['remove_5fvertex',['remove_vertex',['../classdynamic__sparse__graph.html#a05e7f038016167d47560f7e8b1d53ec3',1,'dynamic_sparse_graph']]],
+  ['reserve',['reserve',['../classdynamic__sparse__graph.html#a84bc595af88b2172862987db75c4f830',1,'dynamic_sparse_graph']]]
 ];

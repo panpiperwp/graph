@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['addedge',['addEdge',['../class_graph.html#a051851f77b26c8a28bb5e07dd58c14da',1,'Graph']]],
-  ['addvertex',['addVertex',['../class_graph.html#a702f2b76029522c7e18bd3fd41a4bf6e',1,'Graph']]]
+  ['add_5fedge',['add_edge',['../classdynamic__sparse__graph.html#a9eb5cc4431b2b76d01c3a853e04c610a',1,'dynamic_sparse_graph']]],
+  ['add_5fvertex',['add_vertex',['../classdynamic__sparse__graph.html#a1e079c373c2365513912b2f1db665fdd',1,'dynamic_sparse_graph']]]
 ];

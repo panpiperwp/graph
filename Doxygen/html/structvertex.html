@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Graph: Edge&lt; V, E &gt; Struct Template Reference</title>
+<title>Dynamic Sparse Graph: vertex&lt; V, E &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Graph
+   <div id="projectname">Dynamic Sparse Graph
    </div>
+   <div id="projectbrief">Implementation of a dynamic sparse graph.</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,38 +84,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_edge-members.html">List of all members</a>  </div>
+<a href="structvertex-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Edge&lt; V, E &gt; Struct Template Reference</div>  </div>
+<div class="title">vertex&lt; V, E &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An edge of a graph.  
- <a href="struct_edge.html#details">More...</a></p>
+<p>A vertex of a graph.  
+ <a href="structvertex.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_graph_8h_source.html">Graph.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc2c12142d56a68e231fcde33be85e60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_edge.html#acc2c12142d56a68e231fcde33be85e60">Edge</a> (const std::array&lt; std::shared_ptr&lt; <a class="el" href="struct_vertex.html">Vertex</a>&lt; V, E &gt;&gt;, 2 &gt; &amp;vertices, const E &amp;data)</td></tr>
-<tr class="memdesc:acc2c12142d56a68e231fcde33be85e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_edge.html" title="An edge of a graph. ">Edge</a> constructor.  <a href="#acc2c12142d56a68e231fcde33be85e60">More...</a><br /></td></tr>
-<tr class="separator:acc2c12142d56a68e231fcde33be85e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85bea48c8a6edf3a270df90eee8a7e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvertex.html#ab85bea48c8a6edf3a270df90eee8a7e9">vertex</a> (const V &amp;<a class="el" href="structvertex.html#a2961b0de64b45fe5a2bd630145bffc60">data</a>)</td></tr>
+<tr class="memdesc:ab85bea48c8a6edf3a270df90eee8a7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Vertex constructor.  <a href="#ab85bea48c8a6edf3a270df90eee8a7e9">More...</a><br /></td></tr>
+<tr class="separator:ab85bea48c8a6edf3a270df90eee8a7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a28150eff12d61e9f9e6618e3aa309091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28150eff12d61e9f9e6618e3aa309091"></a>
-std::array&lt; std::shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="struct_vertex.html">Vertex</a>&lt; V, E &gt; &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vertices</b></td></tr>
-<tr class="separator:a28150eff12d61e9f9e6618e3aa309091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa43e5e6cc38bc1e854c8f5f0d9ffe22f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa43e5e6cc38bc1e854c8f5f0d9ffe22f"></a>
-E&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="separator:aa43e5e6cc38bc1e854c8f5f0d9ffe22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859c642e4a9c12a780c97cfd0fdf2916"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a859c642e4a9c12a780c97cfd0fdf2916"></a>
+std::vector&lt; <a class="el" href="structedge.html">edge</a>&lt; V, E &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvertex.html#a859c642e4a9c12a780c97cfd0fdf2916">edges</a></td></tr>
+<tr class="memdesc:a859c642e4a9c12a780c97cfd0fdf2916"><td class="mdescLeft">&#160;</td><td class="mdescRight">The edges connected to this vertex. <br /></td></tr>
+<tr class="separator:a859c642e4a9c12a780c97cfd0fdf2916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2961b0de64b45fe5a2bd630145bffc60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2961b0de64b45fe5a2bd630145bffc60"></a>
+V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvertex.html#a2961b0de64b45fe5a2bd630145bffc60">data</a></td></tr>
+<tr class="memdesc:a2961b0de64b45fe5a2bd630145bffc60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data held by this vertex. <br /></td></tr>
+<tr class="separator:a2961b0de64b45fe5a2bd630145bffc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename V, typename E&gt;<br />
-struct Edge&lt; V, E &gt;</h3>
+struct vertex&lt; V, E &gt;</h3>
 
-<p>An edge of a graph. </p>
+<p>A vertex of a graph. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">V</td><td>is the type of vertex data. </td></tr>
@@ -122,33 +124,23 @@ struct Edge&lt; V, E &gt;</h3>
   </table>
   </dd>
 </dl>
-<p>This struct is a container of vertices and data specific to the edge. Although the edge's vertices are publicly accessible and not const, this is only to allow for altering vertex data. </p>
+<p>This struct is a container of edges and data specific to the vertex. Although the vertex's edges are publicly accessible, they are only to be removed/added through the containing graph's methods. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acc2c12142d56a68e231fcde33be85e60"></a>
+<a class="anchor" id="ab85bea48c8a6edf3a270df90eee8a7e9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename V , typename E &gt; </div>
+template&lt;typename V, typename E&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_edge.html">Edge</a>&lt; V, E &gt;::<a class="el" href="struct_edge.html">Edge</a> </td>
+          <td class="memname"><a class="el" href="structvertex.html">vertex</a>&lt; V, E &gt;::<a class="el" href="structvertex.html">vertex</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; std::shared_ptr&lt; <a class="el" href="struct_vertex.html">Vertex</a>&lt; V, E &gt;&gt;, 2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vertices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const V &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const E &amp;&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -158,10 +150,10 @@ template&lt;typename V , typename E &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The <a class="el" href="struct_edge.html" title="An edge of a graph. ">Edge</a> constructor. </p>
+<p>The Vertex constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">is</td><td>the data </td></tr>
+    <tr><td class="paramname">data</td><td>is the vertex's data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -174,7 +166,7 @@ template&lt;typename V , typename E &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 14 2015 20:58:53 for Graph by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 16 2015 05:00:21 for Dynamic Sparse Graph by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['edge',['Edge',['../struct_edge.html',1,'']]]
+  ['dynamic_5fsparse_5fgraph',['dynamic_sparse_graph',['../classdynamic__sparse__graph.html',1,'']]]
 ];

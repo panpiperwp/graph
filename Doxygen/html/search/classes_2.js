@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertex',['Vertex',['../struct_vertex.html',1,'']]]
+  ['vertex',['vertex',['../structvertex.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../class_graph.html#a5355de1f523ad1574638b997e6ecdeee',1,'Graph']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../classdynamic__sparse__graph.html#a674ca4493524c0cfb23ded95a9e0b554',1,'dynamic_sparse_graph']]]
 ];

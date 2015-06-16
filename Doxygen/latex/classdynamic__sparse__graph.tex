@@ -1,0 +1,386 @@
+\hypertarget{classdynamic__sparse__graph}{\section{dynamic\+\_\+sparse\+\_\+graph$<$ K, H, V, E $>$ Class Template Reference}
+\label{classdynamic__sparse__graph}\index{dynamic\+\_\+sparse\+\_\+graph$<$ K, H, V, E $>$@{dynamic\+\_\+sparse\+\_\+graph$<$ K, H, V, E $>$}}
+}
+
+
+A mathematical graph object.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdynamic__sparse__graph_a8655f2ac67ccc28c88585b0274d83dae}{dynamic\+\_\+sparse\+\_\+graph} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classdynamic__sparse__graph_a0948114b7972032cff225a02c542e800}{dynamic\+\_\+sparse\+\_\+graph} (const \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em The copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classdynamic__sparse__graph_a2c3b2af233063af6aaf248c321a38edb}{dynamic\+\_\+sparse\+\_\+graph} (\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&\&rhs)
+\begin{DoxyCompactList}\small\item\em The move constructor. \end{DoxyCompactList}\item 
+\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} \& \hyperlink{classdynamic__sparse__graph_a6c7f3f46c94242dd69a9d898a87a0d28}{operator=} (\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ rhs)
+\begin{DoxyCompactList}\small\item\em The assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} \& \hyperlink{classdynamic__sparse__graph_a4cb2ab8ecfd4c69ea31ff414da9ba953}{operator=} (\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&\&rhs)
+\begin{DoxyCompactList}\small\item\em The move assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classdynamic__sparse__graph_ad550e140d53117698201ca22574ec1a6}{$\sim$dynamic\+\_\+sparse\+\_\+graph} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_a84bc595af88b2172862987db75c4f830}{reserve} (size\+\_\+t expected\+\_\+vertex\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Reserves memory for the underlying unordered\+\_\+map. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_a1e079c373c2365513912b2f1db665fdd}{add\+\_\+vertex} (const K \&key, const V \&vertex\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Adds a vertex to the graph. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_a9eb5cc4431b2b76d01c3a853e04c610a}{add\+\_\+edge} (const K \&key\+\_\+1, const K \&key\+\_\+2, const E \&edge\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Adds an edge to the graph. \end{DoxyCompactList}\item 
+\hyperlink{structvertex}{vertex}$<$ V, E $>$ \& \hyperlink{classdynamic__sparse__graph_a9efd32f8a74d04dbc6580176ac9c5840}{get\+\_\+vertex} (const K \&key) const 
+\begin{DoxyCompactList}\small\item\em Retrieve the vertex at the given input. \end{DoxyCompactList}\item 
+\hyperlink{structedge}{edge}$<$ V, E $>$ \& \hyperlink{classdynamic__sparse__graph_ab25a322a5ece881ea7ca71fb4b6d3dd2}{get\+\_\+edge} (const K \&key\+\_\+1, const K \&key\+\_\+2) const 
+\begin{DoxyCompactList}\small\item\em Retrieve the edge connecting the vertices at the given input. \end{DoxyCompactList}\item 
+K \hyperlink{classdynamic__sparse__graph_a99591a4ba35e3ab63df0db306fa70cfb}{get\+\_\+key} (const \hyperlink{structvertex}{vertex}$<$ V, E $>$ \&\hyperlink{structvertex}{vertex}) const 
+\begin{DoxyCompactList}\small\item\em Retrieve the key of the input vertex. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classdynamic__sparse__graph_a0253cc8b89538ee083af8ceb375dc26e}{get\+\_\+size} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the number of vertices in the graph. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_a05e7f038016167d47560f7e8b1d53ec3}{remove\+\_\+vertex} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Remove the vertex at the given input. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_a5e377f2d740acef43e1528041b94e52d}{remove\+\_\+edge} (const K \&key\+\_\+1, const K \&key\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Remove the edge conntecting the vertices at the given input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classdynamic__sparse__graph_a674ca4493524c0cfb23ded95a9e0b554}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} \&graph)
+\begin{DoxyCompactList}\small\item\em The output-\/bitshift operator. \end{DoxyCompactList}\item 
+void \hyperlink{classdynamic__sparse__graph_adc8b9cef2cfb6649bf4d19e57b222388}{swap} (\hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&lhs, \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Swaps two \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename K, typename H, typename V, typename E$>$class dynamic\+\_\+sparse\+\_\+graph$<$ K, H, V, E $>$}
+
+A mathematical graph object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em K} & is the type of key used for accesing the vertices. \\
+\hline
+{\em H} & is the type of hash generated by for K. \\
+\hline
+{\em V} & is the type of vertex data. \\
+\hline
+{\em E} & is the type of edge data.\\
+\hline
+\end{DoxyTemplParams}
+The name \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} was chosen to indicate the features and optimal usage for this object; the graph is dynamic because it add and remove vertices and edges, and the graph is sparse because it implements an adjaceny list and as such is best used for representing sparse graphs.~\newline
+This object is built upon an unordered\+\_\+map of vertices.~\newline
+This class is not responsible for managing any heap memory which its vertices and edges might point to. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classdynamic__sparse__graph_a8655f2ac67ccc28c88585b0274d83dae}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{dynamic\+\_\+sparse\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::{\bf dynamic\+\_\+sparse\+\_\+graph} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a8655f2ac67ccc28c88585b0274d83dae}
+
+
+The default constructor. 
+
+vertex\+\_\+count is initialized to 0. \hypertarget{classdynamic__sparse__graph_a0948114b7972032cff225a02c542e800}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{dynamic\+\_\+sparse\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::{\bf dynamic\+\_\+sparse\+\_\+graph} (
+\begin{DoxyParamCaption}
+\item[{const {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a0948114b7972032cff225a02c542e800}
+
+
+The copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & is the graph to copy.\\
+\hline
+\end{DoxyParams}
+A first loop iterates through the rhs graph to copy its vertices. A second loop iterates through the rhs graph to copy its edges.~\newline
+vertex\+\_\+count is initialized to 0 prior to these loops, however. \hypertarget{classdynamic__sparse__graph_a2c3b2af233063af6aaf248c321a38edb}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{dynamic\+\_\+sparse\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::{\bf dynamic\+\_\+sparse\+\_\+graph} (
+\begin{DoxyParamCaption}
+\item[{{\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&\&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a2c3b2af233063af6aaf248c321a38edb}
+
+
+The move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & is the graph to copy.\\
+\hline
+\end{DoxyParams}
+The swap function is called. As a result, the code is more elegant but it may run slower. \hypertarget{classdynamic__sparse__graph_ad550e140d53117698201ca22574ec1a6}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!````~dynamic\+\_\+sparse\+\_\+graph@{$\sim$dynamic\+\_\+sparse\+\_\+graph}}
+\index{````~dynamic\+\_\+sparse\+\_\+graph@{$\sim$dynamic\+\_\+sparse\+\_\+graph}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{$\sim$dynamic\+\_\+sparse\+\_\+graph}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::$\sim${\bf dynamic\+\_\+sparse\+\_\+graph} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_ad550e140d53117698201ca22574ec1a6}
+
+
+The destructor. 
+
+While vertices exist, remove\+\_\+vertex is called on the last one. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classdynamic__sparse__graph_a9eb5cc4431b2b76d01c3a853e04c610a}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!add\+\_\+edge@{add\+\_\+edge}}
+\index{add\+\_\+edge@{add\+\_\+edge}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{add\+\_\+edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::add\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key\+\_\+1, }
+\item[{const K \&}]{key\+\_\+2, }
+\item[{const E \&}]{edge\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a9eb5cc4431b2b76d01c3a853e04c610a}
+
+
+Adds an edge to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+1} & is the key corresponding to the first vertex. \\
+\hline
+{\em key\+\_\+2} & is the key corresponding to the second vertex. \\
+\hline
+{\em edge\+\_\+data} & is the data held by the edge.\\
+\hline
+\end{DoxyParams}
+This function asserts that the key arguments are not equal and checks that vertices do indeed exist at the input keys. Memory is allocated. \hypertarget{classdynamic__sparse__graph_a1e079c373c2365513912b2f1db665fdd}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!add\+\_\+vertex@{add\+\_\+vertex}}
+\index{add\+\_\+vertex@{add\+\_\+vertex}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{add\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::add\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key, }
+\item[{const V \&}]{vertex\+\_\+data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a1e079c373c2365513912b2f1db665fdd}
+
+
+Adds a vertex to the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key at which to store the vertex. \\
+\hline
+{\em vertex\+\_\+data} & is the data held by the vertex.\\
+\hline
+\end{DoxyParams}
+This function does not check for pre-\/existing vertices. Memory is allocated. \hypertarget{classdynamic__sparse__graph_ab25a322a5ece881ea7ca71fb4b6d3dd2}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!get\+\_\+edge@{get\+\_\+edge}}
+\index{get\+\_\+edge@{get\+\_\+edge}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{get\+\_\+edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf edge}$<$V, E$>$\& {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::get\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key\+\_\+1, }
+\item[{const K \&}]{key\+\_\+2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_ab25a322a5ece881ea7ca71fb4b6d3dd2}
+
+
+Retrieve the edge connecting the vertices at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+1} & is the key corresponding to the first vertex. \\
+\hline
+{\em key\+\_\+2} & is the key corresponding to the second vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the edge connecting the vertices at the given input.
+\end{DoxyReturn}
+This function asserts that the keys are not equal and that the edge exists, and checks that vertices do indeed exist at the input keys. \hypertarget{classdynamic__sparse__graph_a99591a4ba35e3ab63df0db306fa70cfb}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!get\+\_\+key@{get\+\_\+key}}
+\index{get\+\_\+key@{get\+\_\+key}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{get\+\_\+key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ K {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::get\+\_\+key (
+\begin{DoxyParamCaption}
+\item[{const {\bf vertex}$<$ V, E $>$ \&}]{vertex}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a99591a4ba35e3ab63df0db306fa70cfb}
+
+
+Retrieve the key of the input vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & is the vertex of the desired key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the key of the input vertex.
+\end{DoxyReturn}
+This function asserts that the vertex exists in the graph. \hypertarget{classdynamic__sparse__graph_a0253cc8b89538ee083af8ceb375dc26e}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!get\+\_\+size@{get\+\_\+size}}
+\index{get\+\_\+size@{get\+\_\+size}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{get\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ size\+\_\+t {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::get\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a0253cc8b89538ee083af8ceb375dc26e}
+
+
+Retrieve the number of vertices in the graph. 
+
+\begin{DoxyReturn}{Returns}
+the number of vertices in the graph. 
+\end{DoxyReturn}
+\hypertarget{classdynamic__sparse__graph_a9efd32f8a74d04dbc6580176ac9c5840}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!get\+\_\+vertex@{get\+\_\+vertex}}
+\index{get\+\_\+vertex@{get\+\_\+vertex}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{get\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf vertex}$<$V, E$>$\& {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::get\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a9efd32f8a74d04dbc6580176ac9c5840}
+
+
+Retrieve the vertex at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key corresponding to desired vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex at the given input.
+\end{DoxyReturn}
+This function checks for the existence of the vertex. \hypertarget{classdynamic__sparse__graph_a6c7f3f46c94242dd69a9d898a87a0d28}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!operator=@{operator=}}
+\index{operator=@{operator=}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}\& {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a6c7f3f46c94242dd69a9d898a87a0d28}
+
+
+The assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & is the graph to be assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this graph post-\/assignment.
+\end{DoxyReturn}
+This function is implemented according to the copy-\/swap idiom. \hypertarget{classdynamic__sparse__graph_a4cb2ab8ecfd4c69ea31ff414da9ba953}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!operator=@{operator=}}
+\index{operator=@{operator=}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ {\bf dynamic\+\_\+sparse\+\_\+graph}\& {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&\&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a4cb2ab8ecfd4c69ea31ff414da9ba953}
+
+
+The move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & is the graph to be assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this graph post-\/assignment.
+\end{DoxyReturn}
+The swap function is called. As a result, the code is more elegant but it may run slower. This function is identical to the ordinary assignment operator. \hypertarget{classdynamic__sparse__graph_a5e377f2d740acef43e1528041b94e52d}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!remove\+\_\+edge@{remove\+\_\+edge}}
+\index{remove\+\_\+edge@{remove\+\_\+edge}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{remove\+\_\+edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::remove\+\_\+edge (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key\+\_\+1, }
+\item[{const K \&}]{key\+\_\+2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a5e377f2d740acef43e1528041b94e52d}
+
+
+Remove the edge conntecting the vertices at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+\_\+1} & is the key corresponding to the origin vertex. \\
+\hline
+{\em key\+\_\+2} & is the key corresponding to the destination vertex.\\
+\hline
+\end{DoxyParams}
+This function asserts that the keys are not equal and that the edge exists, and checks that vertices do indeed exist at the input keys. Memory is deleted. \hypertarget{classdynamic__sparse__graph_a05e7f038016167d47560f7e8b1d53ec3}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!remove\+\_\+vertex@{remove\+\_\+vertex}}
+\index{remove\+\_\+vertex@{remove\+\_\+vertex}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{remove\+\_\+vertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::remove\+\_\+vertex (
+\begin{DoxyParamCaption}
+\item[{const K \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a05e7f038016167d47560f7e8b1d53ec3}
+
+
+Remove the vertex at the given input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & is the key corresponding to the desired vertex.\\
+\hline
+\end{DoxyParams}
+This function checks for the existence of the vertex. The edges of the vertex are also removed. Memory is deleted. \hypertarget{classdynamic__sparse__graph_a84bc595af88b2172862987db75c4f830}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!reserve@{reserve}}
+\index{reserve@{reserve}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$\+::reserve (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{expected\+\_\+vertex\+\_\+count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classdynamic__sparse__graph_a84bc595af88b2172862987db75c4f830}
+
+
+Reserves memory for the underlying unordered\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+\_\+vertex\+\_\+count} & is the expected number of vertices that the graph is expected to contain. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classdynamic__sparse__graph_a674ca4493524c0cfb23ded95a9e0b554}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&}]{graph}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classdynamic__sparse__graph_a674ca4493524c0cfb23ded95a9e0b554}
+
+
+The output-\/bitshift operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & is the stream to which the graph is output. \\
+\hline
+{\em graph} & is the graph which is output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the stream after outputting the graph to it.
+\end{DoxyReturn}
+This function is useful for debugging; it outputs the addresses of the graph, its vertices, and the vertices' edges. \hypertarget{classdynamic__sparse__graph_adc8b9cef2cfb6649bf4d19e57b222388}{\index{dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}!swap@{swap}}
+\index{swap@{swap}!dynamic\+\_\+sparse\+\_\+graph@{dynamic\+\_\+sparse\+\_\+graph}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename H, typename V, typename E$>$ void swap (
+\begin{DoxyParamCaption}
+\item[{{\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&}]{lhs, }
+\item[{{\bf dynamic\+\_\+sparse\+\_\+graph}$<$ K, H, V, E $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classdynamic__sparse__graph_adc8b9cef2cfb6649bf4d19e57b222388}
+
+
+Swaps two \hyperlink{classdynamic__sparse__graph}{dynamic\+\_\+sparse\+\_\+graph} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & is the first graph. \\
+\hline
+{\em rhs} & is the second graph.\\
+\hline
+\end{DoxyParams}
+This function is implemented for use with the copy-\/swap idiom. In particular, both graphs are left in an assignable/destructable state. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Brenden/\+Documents/\+Visual Studio 2013/\+Projects/\+Miscellaneous/\+Graph/\+Graph/Graph.\+h\end{DoxyCompactItemize}

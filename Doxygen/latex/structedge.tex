@@ -1,0 +1,67 @@
+\hypertarget{structedge}{\section{edge$<$ V, E $>$ Struct Template Reference}
+\label{structedge}\index{edge$<$ V, E $>$@{edge$<$ V, E $>$}}
+}
+
+
+An edge of a graph.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structedge_ad7ee290897d59993f6c36f1fe6017684}{edge} (const std\+::array$<$ \hyperlink{structvertex}{vertex}$<$ V, E $>$ $\ast$, 2 $>$ \&\hyperlink{structedge_abff4f32bae651d926d25e7462d932d69}{vertices}, const E \&\hyperlink{structedge_a1a619d3c9db678ad60811c4092b0dce9}{data})
+\begin{DoxyCompactList}\small\item\em The Edge constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structedge_abff4f32bae651d926d25e7462d932d69}{std\+::array$<$ \hyperlink{structvertex}{vertex}$<$ V, E $>$ $\ast$, 2 $>$ \hyperlink{structedge_abff4f32bae651d926d25e7462d932d69}{vertices}}\label{structedge_abff4f32bae651d926d25e7462d932d69}
+
+\begin{DoxyCompactList}\small\item\em The vertices connected by this edge. \end{DoxyCompactList}\item 
+\hypertarget{structedge_a1a619d3c9db678ad60811c4092b0dce9}{E \hyperlink{structedge_a1a619d3c9db678ad60811c4092b0dce9}{data}}\label{structedge_a1a619d3c9db678ad60811c4092b0dce9}
+
+\begin{DoxyCompactList}\small\item\em The data held by this vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename V, typename E$>$struct edge$<$ V, E $>$}
+
+An edge of a graph. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em V} & is the type of vertex data. \\
+\hline
+{\em E} & is the type of edge data.\\
+\hline
+\end{DoxyTemplParams}
+This struct is a container of vertices and data specific to the edge. Although the edge's vertices are publicly accessible and not const, this is only to allow for altering vertex data; do not change the addresses of the pointers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structedge_ad7ee290897d59993f6c36f1fe6017684}{\index{edge@{edge}!edge@{edge}}
+\index{edge@{edge}!edge@{edge}}
+\subsubsection[{edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V, typename E$>$ {\bf edge}$<$ V, E $>$\+::{\bf edge} (
+\begin{DoxyParamCaption}
+\item[{const std\+::array$<$ {\bf vertex}$<$ V, E $>$ $\ast$, 2 $>$ \&}]{vertices, }
+\item[{const E \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structedge_ad7ee290897d59993f6c36f1fe6017684}
+
+
+The Edge constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & are the two vertices which this edge connects. \\
+\hline
+{\em data} & is the edge's data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Brenden/\+Documents/\+Visual Studio 2013/\+Projects/\+Miscellaneous/\+Graph/\+Graph/Graph.\+h\end{DoxyCompactItemize}

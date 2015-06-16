@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Graph: Class Members - Functions</title>
+<title>Dynamic Sparse Graph: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Graph
+   <div id="projectname">Dynamic Sparse Graph
    </div>
+   <div id="projectbrief">Implementation of a dynamic sparse graph.</div>
   </td>
  </tr>
  </tbody>
@@ -68,6 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -77,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,47 +90,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 &#160;<ul>
-<li>addEdge()
-: <a class="el" href="class_graph.html#a051851f77b26c8a28bb5e07dd58c14da">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>add_edge()
+: <a class="el" href="classdynamic__sparse__graph.html#a9eb5cc4431b2b76d01c3a853e04c610a">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>addVertex()
-: <a class="el" href="class_graph.html#a702f2b76029522c7e18bd3fd41a4bf6e">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>add_vertex()
+: <a class="el" href="classdynamic__sparse__graph.html#a1e079c373c2365513912b2f1db665fdd">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>Edge()
-: <a class="el" href="struct_edge.html#acc2c12142d56a68e231fcde33be85e60">Edge&lt; V, E &gt;</a>
+<li>dynamic_sparse_graph()
+: <a class="el" href="classdynamic__sparse__graph.html#a8655f2ac67ccc28c88585b0274d83dae">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>getEdge()
-: <a class="el" href="class_graph.html#a86f2bb9185e6c7fd7db037e3bc1e0be5">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>edge()
+: <a class="el" href="structedge.html#ad7ee290897d59993f6c36f1fe6017684">edge&lt; V, E &gt;</a>
 </li>
-<li>getKey()
-: <a class="el" href="class_graph.html#af3629a385f2e88d86f769aa9b9984795">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>get_edge()
+: <a class="el" href="classdynamic__sparse__graph.html#ab25a322a5ece881ea7ca71fb4b6d3dd2">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>getSize()
-: <a class="el" href="class_graph.html#a99e8a0471b0aebb5a01905013d0b48b1">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>get_key()
+: <a class="el" href="classdynamic__sparse__graph.html#a99591a4ba35e3ab63df0db306fa70cfb">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>getVertex()
-: <a class="el" href="class_graph.html#aac27624b986945639260a6e9562b7ff8">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>get_size()
+: <a class="el" href="classdynamic__sparse__graph.html#a0253cc8b89538ee083af8ceb375dc26e">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>Graph()
-: <a class="el" href="class_graph.html#a8af5978e194f7b3b86d0c43b8e6c87cc">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>get_vertex()
+: <a class="el" href="classdynamic__sparse__graph.html#a9efd32f8a74d04dbc6580176ac9c5840">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>removeEdge()
-: <a class="el" href="class_graph.html#a8e084b3d3126f70deede7e4386946c33">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>operator=()
+: <a class="el" href="classdynamic__sparse__graph.html#a6c7f3f46c94242dd69a9d898a87a0d28">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>removeVertex()
-: <a class="el" href="class_graph.html#ac05cba56c39d45e3d87d340da5c9f961">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>remove_edge()
+: <a class="el" href="classdynamic__sparse__graph.html#a5e377f2d740acef43e1528041b94e52d">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>Vertex()
-: <a class="el" href="struct_vertex.html#a569a8010956627ab0ac58e1fb1e1de4d">Vertex&lt; V, E &gt;</a>
+<li>remove_vertex()
+: <a class="el" href="classdynamic__sparse__graph.html#a05e7f038016167d47560f7e8b1d53ec3">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
-<li>~Graph()
-: <a class="el" href="class_graph.html#a6eff1780982d97b034429a7e367c6553">Graph&lt; Key, Hash, V, E &gt;</a>
+<li>reserve()
+: <a class="el" href="classdynamic__sparse__graph.html#a84bc595af88b2172862987db75c4f830">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
+</li>
+<li>vertex()
+: <a class="el" href="structvertex.html#ab85bea48c8a6edf3a270df90eee8a7e9">vertex&lt; V, E &gt;</a>
+</li>
+<li>~dynamic_sparse_graph()
+: <a class="el" href="classdynamic__sparse__graph.html#ad550e140d53117698201ca22574ec1a6">dynamic_sparse_graph&lt; K, H, V, E &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 14 2015 20:58:53 for Graph by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 16 2015 05:00:22 for Dynamic Sparse Graph by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
