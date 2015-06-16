@@ -149,27 +149,33 @@ public:
 	dynamic_sparse_graph(const dynamic_sparse_graph<K,H,V,E>& rhs)
 	: vertex_count(0)
 	{
+		// Add the rhs vertices to this graph.
 		for (auto rhs_vertex : rhs.vertices)
 			this->add_vertex(rhs_vertex.first, rhs_vertex.second->data);
 
+		// This object is used to track which edges have been added. Note that each edge
+		// will be visited in the following loop exactly twice (unless the user has done
+		// some nasty business with edges).
 		std::unordered_set<edge<V, E>*> rhs_edges;
 
 		for (auto rhs_vertex : rhs.vertices)
 		{
+			// Iterate through each rhs vertex's edges.
 			for (auto rhs_edge : rhs_vertex.second->edges)
 			{
 				auto rhs_edges_it = rhs_edges.find(rhs_edge);
-				if (rhs_edges_it == rhs_edges.end())
+				if (rhs_edges_it == rhs_edges.end()) // The rhs edge has not been visited before.
 				{
 					rhs_edges.insert(rhs_edge);
 
+					// Add the rhs edge to this graph.
 					if (rhs_edge->vertices.at(0) == rhs_vertex.second)
 						this->add_edge(rhs_vertex.first, rhs.get_key(*rhs_edge->vertices.at(1)), rhs_edge->data);
 					else
 						this->add_edge(rhs_vertex.first, rhs.get_key(*rhs_edge->vertices.at(0)), rhs_edge->data);
 				}
-				else
-					rhs_edges.erase(rhs_edge);
+				else // The edge has been visited before
+					rhs_edges.erase(rhs_edge); // This removal is done to speed up the set searchs.
 			}
 		}
 
@@ -350,8 +356,10 @@ public:
 
 		edge<V, E>* old_edge;
 
+		// Delete all of the desired vertex's edges.
 		while (old_vertex->edges.size() > 0)
 		{
+			// Take the last edge so as to use pop_back later.
 			old_edge = *(--old_vertex->edges.end());
 
 			if (old_vertex == old_edge->vertices.at(0))
@@ -361,6 +369,8 @@ public:
 
 			old_vertex->edges.pop_back();
 
+			// Find the edge among the connected vertex's edges,
+			// move it to the back of the vector and pop it off.
 			auto old_edge_it = std::find(connected_vertex->edges.begin(), connected_vertex->edges.end(), old_edge);
 			*old_edge_it = *(--connected_vertex->edges.end());
 			connected_vertex->edges.pop_back();
@@ -389,6 +399,7 @@ public:
 
 		auto edge_it = vertex_1->edges.begin();
 
+		// Find the desired edge among the first vertex's edges.
 		while (edge_it != vertex_1->edges.end()
 			&& (*edge_it)->vertices.at(0) != vertex_2
 			&& (*edge_it)->vertices.at(1) != vertex_2)
@@ -398,11 +409,15 @@ public:
 
 		assert(edge_it != vertex_1->edges.end());
 
+		// Point to the desired edge for later deletion.
 		edge<V, E>* old_edge = *edge_it;
 
+		// Move the desired edge to the back of the vector and pop it off.
 		*edge_it = *(--vertex_1->edges.end());
 		vertex_1->edges.pop_back();
 
+		// Find the desired edge among the second vertex's edges,
+		// move it to the back of the vector and pop it off.
 		auto old_edge_it = std::find(vertex_2->edges.begin(), vertex_2->edges.end(), old_edge);
 		*old_edge_it = *(--vertex_2->edges.end());
 		vertex_2->edges.pop_back();
