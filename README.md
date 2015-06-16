@@ -1,6 +1,6 @@
-# graph
+# Dynamic sparse graph.
 
-Implementation of a flexible graph based on an adjacency list.
+Implementation of a dynamic sparse graph.
 
 It turns out that the graph is a bit of an awkward data structure to work with. On one hand, one might like the freedom to alter vertex and edge data. On the other, it seems necessary for an encapsulating class to manage vertex and edge additions/removals. Therefore the Edge and Vertex objects remain structs, but I advise against directly manipulating the containers they contain -- use the Graph class for that. The Graph class will ensure that edge and vertex pointers are consistent among vertices and edges, respectively, throughout addition and removal.
 
@@ -13,3 +13,8 @@ Now for some notes you should read:
 - You can reserve memory for the graph! See the Doxygen documentation and take a look at the constructors for the Graph class.
 
 I hope that you find this class useful!
+
+Update 6/18/2015:
+- Clarified the type of graph; it turns out that a "flexible graph" is actually a mathematical term and not what I have set out to create. Dynamic (can add and remove vertices and edges) and sparse (implements an adjacency list so keep the number edges O(n)) are much more descriptive terms
+- In an attempt to mimic the STL, I renamed most of the objects. Commenting is better, too, and documentation is complete.
+- The big 5 have been implemented! (It has to be said that the move semantics may be lacking, however.)
